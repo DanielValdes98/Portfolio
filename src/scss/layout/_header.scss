@@ -1,0 +1,176 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+// SECCION HEADER
+.contenedor-header{
+    // background: url(/src/img/fondo.png), linear-gradient(to top, v.$negro, v.$negro);
+    background: linear-gradient(to top, v.$negro, v.$negro);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .logo {
+        color: v.$amarillo;
+        text-decoration: none;
+    }
+    
+    .logo_nombre {
+        font-weight: v.$black;
+        font-size: 2.2rem;
+    }
+    
+    .logo_cambio {
+        color: v.$blanco;
+        font-weight: v.$black;
+        text-transform: uppercase;
+    }
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.navegacion_enlace:hover {
+    color: v.$amarillo;
+}
+
+.nav-responsive{
+
+    background-color: v.$amarillo;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    display: none;
+    
+    svg {
+        width: 2rem;
+        height: 2rem;
+        fill: rgb(255, 255, 255);
+    }
+}
+
+// SECCION INICIO
+
+.inicio {
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    color: v.$blanco;
+    display: flex;
+    align-items: center;
+    background: url(/src/img/fondo.png), linear-gradient(to top, rgba(v.$amarillo,.9), rgba(v.$negro,1));
+}
+
+.inicio .contenido-banner {
+    padding: 20px;
+    background-color: rgba(v.$negro,.6);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.contenedor-img img{
+    margin-top: 4rem;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio-texto {
+    text-align: center;
+    color: v.$blanco;
+    margin: 1rem;
+
+    h3 {
+        font-size: 2.2rem;
+    }
+}
+
+.redes a{
+    color: v.$blanco;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid v.$blanco;
+    border-radius: 100%;
+    width: 4.2rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    margin: 10px 5px;
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.redes a:hover{
+    background-color: v.$amarillo;
+}
+
+
+
+
+
+
+
+    // // background-color: red;
+    // color: #fff;
+    // padding: 5rem 10rem;
+    // border-radius: 5px;
+    // cursor: pointer;
+    // // display: none;
+
+
+// .header {
+//     // Configuracion si tuviera una imagen como fondo del header
+//     // background-image: url(ruta_imagen);
+//     // background-repeat: no-repeat;
+//     // background-position: center center; // Centrar de todos los lados
+    
+//     background-size: cover; // Para que tome todo el espacio dispoible
+//     height: 60rem; // Alto del header
+//     background: linear-gradient(to top, v.$azul, v.$negro);
+// }
+
+// .header_texto {
+//     text-align: center;
+//     color: v.$blanco;
+//     margin: 0;
+//     // background: linear-gradient(to top, v.$azul, v.$negro);
+//     // background-size: cover; // Para que tome todo el espacio dispoible
+//     // height: 70rem; // Alto del header
+
+//     h3 {
+//         font-size: 2.2rem;
+//     }
+
+// }
+
+// // Para centrar el texto en el header cuando este en el pc
+// @media (min-width: 768px) {
+//     .header_texto {
+//         margin-top: 25rem;
+//     }
+// }

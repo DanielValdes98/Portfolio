@@ -1,0 +1,78 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+// SECCION RESPONSIVE
+
+@media screen and (max-width: 980px) { // En el tamaño mayor de una tablet
+    .contenedor-courses {
+        @include m.grid(3, 5rem); // Crea 1 columna usando grid
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: v.$negro;
+        width: 180px;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid v.$blanco;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .contenedor-courses {
+        @include m.grid(2, 5rem); // Crea 1 columna usando grid
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .contenedor-courses {
+        @include m.grid(1, 5rem); // Crea 1 columna usando grid
+    }
+
+    .portfolio .galeria {
+        // display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+
+    // .portfolio .galeria .proyecto img{
+        // width: 100%;
+    // }
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+

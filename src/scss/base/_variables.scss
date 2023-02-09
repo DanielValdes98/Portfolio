@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+
+// Fuentes
+$fuente_principal: 'Roboto Condensed', sans-serif;
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colores
+$azul: #14213D;
+$amarillo:#FCA311;
+$negro: #000000;
+$blanco: #FFFFFF;
+$gris: #E5E5E5;
+$grisOscuro: #333333;
+$grisClaro: #e5e5e580;
+// Paleta de colores: https://coolors.co/palette/000000-14213d-fca311-e5e5e5-ffffff
+
+$separacion: 5rem;
+
+// Fuentes
+
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$black: 900;
+

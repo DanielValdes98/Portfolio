@@ -1,0 +1,100 @@
+@use 'variables' as v;
+
+/* Aplicar un modelo de diseño de caja natural a todos los elementos, 
+    pero permitiendo que los componentes cambien */
+
+
+html {
+    font-size: 62.5%; // Permite que 1 rem sea igual a 10px
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow : hidden;
+    }
+
+    &.body-scroll {
+        padding-top: 86px; // o 8.66rem
+    }
+
+}
+
+p {
+    font-size: 2rem;
+    color: v.$negro;
+    line-height: 1.5;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto; // Para centrar el contenido
+
+    h1 {
+        text-align: center;
+    }
+
+    @media (min-width: 768px) {
+        &.fijo {
+            // z-index: 1; // Pone la barra de navegacion por encima de todo
+            padding: 0 10rem;
+            background: linear-gradient(to top, v.$azul, v.$negro);
+            position: fixed;
+            min-width: 100%;
+            box-shadow: .3rem .3rem .3rem v.$grisOscuro;
+            
+        }
+    }
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    svg {
+        margin-left: 1rem;
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+        justify-items: center;
+        fill: white;
+    }
+}
+
+h1, h2, h3 {
+    margin: 0 0 0 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: v.$bold;
+    
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+// img {
+//     max-width: 100%;
+//     width: 100%;
+//     height: auto;
+//     display: block;
+// }
+

@@ -1,0 +1,64 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+// @media (min-width: 768px) {
+//     .barra {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center; // Alinear verticalmente
+//         padding: 2rem;
+        
+//     }
+// }
+
+// .logo {
+//     color: v.$amarillo;
+//     text-decoration: none;
+
+// }
+
+// .logo_nombre {
+//     font-weight: v.$black;
+//     font-size: 2.2rem;
+// }
+
+// .logo_cambio {
+//     color: v.$blanco;
+//     font-weight: v.$black;
+//     text-transform: uppercase;
+// }
+
+// // En el celular, sera display block la barra de navegacion
+// .navegacion_enlace {
+//     display: block;
+//     color: v.$blanco;
+//     padding: 1rem;   
+//     text-align: center;     
+//     font-size: 1.8rem;
+// }
+
+// // Cuando este en el pc, se cambia a display flex, esto es porque supera los 768px definidos en el media query
+// @media (min-width: 768px) {
+//     .nav {
+//         display: flex;
+//         gap: 2rem; // Espacio entre los elementos de navegacion
+//     }
+// }
+
+// .navegacion_enlace:hover {
+//     color: v.$amarillo;
+// }
+
+// // /** Menu de hamburguesa **/
+// .mobile-menu {
+//     @include m.tablet {
+//         display: none;
+//     }
+
+//     i {
+//         font-size: 2em;
+//         color: white;
+
+//     }
+// }
+

@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.education {
+    padding: 9rem 0 1rem 0;
+    background: linear-gradient(to bottom, rgba(v.$negro,.9), rgba(v.$azul,1));    
+    color: v.$blanco;
+}
+
+.contenedor-courses {   
+    margin: 40px auto auto auto;
+    @include m.telefono { // En el tamaño mayor de una tablet
+        @include m.grid(2, 5rem); // Crea 1 columna usando grid
+    }
+}
+
+.contenedor-courses{
+    @include m.tablet { // En el tamaño mayor de una tablet
+        @include m.grid(4, 4rem); // Crea 1 columna usando grid
+        align-items: center;
+        justify-content: space-between;
+        // margin-top: 3rem;
+        // max-width: 1100px;        
+        width: 100%;
+    }
+
+}
+
+.contenido-courses {
+    max-width: 1100px; 
+
+    h1 {
+        text-decoration: 2px underline double v.$amarillo;
+        text-underline-position: under;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+    }
+
+    p {
+        font-weight: bold;
+        color: v.$blanco;
+        line-height: 0px;
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 20rem;
+        height: 15rem;
+        align-items: center;
+        justify-items: center;
+        transition: .3s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
